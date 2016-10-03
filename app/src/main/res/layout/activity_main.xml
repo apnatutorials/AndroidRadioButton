@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.apnatutorials.androidradiobutton.MainActivity">
+
+    <TextView
+        android:id="@+id/tvDemoTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_radiobutton_demo"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/devider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvDemoTitle1"
+        android:background="#000" />
+
+    <RadioGroup
+        android:id="@+id/rgDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devider1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/rbDefaultMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioButtonClickHandler"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/rbDefaultFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioButtonClickHandler"
+            android:text="@string/female"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDemoTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgDefault"
+        android:text="@string/custom_radiobutton_demo"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/devider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvDemoTitle2"
+        android:background="#000" />
+
+    <RadioGroup
+        android:id="@+id/rgCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devider2"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbCustomMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:button="@drawable/radiobutton_selector"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dip"
+            android:text="@string/male"
+            android:textColor="@drawable/radiobutton_color_selector"
+            android:theme="@style/RadioButton"
+            android:onClick="radioButtonClickHandler"
+            />
+
+        <RadioButton
+            android:id="@+id/rbCustomFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:button="@drawable/radiobutton_selector"
+            android:paddingLeft="10dip"
+            android:text="@string/female"
+            android:textColor="@drawable/radiobutton_color_selector"
+            android:theme="@style/RadioButton"
+            android:onClick="radioButtonClickHandler"
+            />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android RadioButton</string>
+    <string name="default_radiobutton_demo">Default RadioButton demo</string>
+    <string name="custom_radiobutton_demo">Custom RadioButton demo</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>
